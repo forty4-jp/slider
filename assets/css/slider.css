@@ -2,7 +2,7 @@
 
 /* = mod-slider
 ----------------------------------------------- *
- * スライダー共通設定
+ * Slider Initialization
 ----------------------------------------------- */
 .mod-slider {
 	position: relative;
@@ -14,7 +14,40 @@
 .mod-slider .list {
 	position: relative;
 }
-/* スライド */
 .mod-slider .item {
 	float: left;
+}
+
+/* -------------------------------------------- *
+ * Slider Default UI
+----------------------------------------------- */
+.mod-slider.ui-default {
+	padding: 15px 40px;
+	border: 1px solid gray;
+}
+/* ナビ */
+.mod-slider.ui-default .nav .prev,
+.mod-slider.ui-default .nav .next {
+	position: absolute;
+	top: 50%;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.mod-slider.ui-default .nav .prev:before {
+	content: "«";
+	font-weight: bold;
+}
+.mod-slider.ui-default .nav .next:before {
+	content: "»";
+	font-weight: bold;
+}
+.mod-slider.ui-default .nav .prev {
+	left: 0;
+}
+.mod-slider.ui-default .nav .next {
+	right: 0;
 }
