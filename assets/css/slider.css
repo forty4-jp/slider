@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* = mod-slider
+----------------------------------------------- *
+ * スライダー共通設定
+----------------------------------------------- */
+.mod-slider {
+	position: relative;
+}
+.mod-slider .view {
+	position: relative;
+	overflow: hidden;
+}
+.mod-slider .list {
+	position: relative;
+}
+/* スライド */
+.mod-slider .item {
+	float: left;
+}
